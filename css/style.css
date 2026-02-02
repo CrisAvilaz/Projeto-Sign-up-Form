@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100v;
+    font-family: "Mona Sans", system-ui, sans-serif;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: aqua;
+    position: relative;
+}
+
+.content {
+    flex: 2;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
