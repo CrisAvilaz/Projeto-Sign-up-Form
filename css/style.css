@@ -16,12 +16,142 @@ body{
 
 .sidebar {
     flex: 1;
-    background-color: aqua;
-    position: relative;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 16px 24px;
+    margin-top: 300px;
+}
+
+.logo-overlay img {
+    height: 90px;
+}
+
+.logo-overlay h1 {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+
+.image-credit {
+    margin-top: auto;
+    font-size: 0.75rem;
+    color: white;
+    text-align: center;
+}
+
+.image-credit a {
+    color: white;
 }
 
 .content {
     flex: 2;
     padding: 40px;
-    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    background-color: #f3f3f3;
+}
+
+.intro-text {
+    max-width: 65ch;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+}
+
+.intro-text p + p {
+    margin-top: 18px;
+}
+
+.form-container {
+    background: #fff;
+    padding: 24px 28px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.form-container h2 {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 28px;
+    margin-bottom: 18px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 260px;
+}
+
+label {
+    font-size: 0.70rem;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+input {
+    height: 36px;
+    padding: 8px 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #2b6cb0;
+    box-shadow: 0 0 0 3px rgba(43,108,176,0.18);
+}
+
+input:invalid{
+    border-color: #e53e3e;
+}
+
+.account-action {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.cta{
+    width: 220px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    background: #596d48;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.cta:hover {
+    filter:brightness(0.95)
+}
+
+.login-text a {
+    color: #596d48;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login-text a:hover{
+    text-decoration: underline;
 }
